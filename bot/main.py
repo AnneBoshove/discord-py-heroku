@@ -256,6 +256,24 @@ async def listener(message):
     if "cheesecake" in message.content:
         myid = '<@406516312676892673>'
         await message.channel.send(myid)
+       
+@bot.listen('on_message')
+async def listener(message):
+    if "demon" in message.content:
+        myid = '<@481161014130376739>'
+        await message.channel.send(myid)
+        
+@bot.listen('on_message')
+async def listener(message):
+    if "Demon" in message.content:
+        myid = '<@481161014130376739>'
+        await message.channel.send(myid)
+        
+@bot.listen('on_message')
+async def listener(message):
+    if "DEMON" in message.content:
+        myid = '<@481161014130376739>'
+        await message.channel.send(myid)
 
 
 if __name__ == "__main__":

@@ -70,7 +70,13 @@ async def meme(ctx):
 async def meme(ctx):
     response = "De kipnugget (Engels: chicken nugget) is een fastfood-snack. Een kipnugget is samengesteld uit een pasta van fijn gemarineerd kippenvlees en kippenhuid die wordt gehuld in beslag of broodkruimels voordat hij wordt bereid. Fastfoodrestaurants frituren kipnuggets meestal in olie. Kipnuggets bakken in de oven is thuis de gebruikelijke wijze van bereiden. De kipnugget werd uitgevonden in de jaren 1950 door Robert C. Baker, hoogleraar levensmiddelentechnologie aan de Cornell-universiteit in de staat New York. Bakers innovatie maakte het mogelijk om kipnuggets te creëren in elke vorm. Het woord kipnugget is een combinatie van de woorden 'kip' en het Engelse woord nugget, dat 'klomp' betekent (als in goudklomp). De combinatie van woorden is gaandeweg vernederlandst."
     await ctx.send(response)
-    
+ 
+
+
+@bot.command(name='lemons')
+async def meme(ctx):
+    response = "I’ve been thinking. When life gives you lemons? Don’t make lemonade. Make life take the lemons back! Get mad! I don’t want your damn lemons! What am I supposed to do with these? Demand to see life’s manager! Make life rue the day it thought is could give me lemons! Do you know who I am? I’m the man who’s going to burn your house down! With the lemons! I’m going to get my engineers to invent a combustible lemon that burns your house down!"
+    await ctx.send(response)
 
 ##GIFS
 

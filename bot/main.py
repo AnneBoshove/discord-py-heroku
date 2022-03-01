@@ -71,6 +71,11 @@ async def meme(ctx):
     response = "De kipnugget (Engels: chicken nugget) is een fastfood-snack. Een kipnugget is samengesteld uit een pasta van fijn gemarineerd kippenvlees en kippenhuid die wordt gehuld in beslag of broodkruimels voordat hij wordt bereid. Fastfoodrestaurants frituren kipnuggets meestal in olie. Kipnuggets bakken in de oven is thuis de gebruikelijke wijze van bereiden. De kipnugget werd uitgevonden in de jaren 1950 door Robert C. Baker, hoogleraar levensmiddelentechnologie aan de Cornell-universiteit in de staat New York. Bakers innovatie maakte het mogelijk om kipnuggets te creëren in elke vorm. Het woord kipnugget is een combinatie van de woorden 'kip' en het Engelse woord nugget, dat 'klomp' betekent (als in goudklomp). De combinatie van woorden is gaandeweg vernederlandst."
     await ctx.send(response)
  
+@bot.command(name='vlammetje')
+async def meme(ctx):
+    response = "Een vlammetje is een gefrituurde snack die meestal in snackbars verkocht wordt. Het is een extra pikant hapje (pangsit pedis). Een vlammetje ziet eruit als een mini-loempia. Het bestaat uit een krokant korstje aan de buitenkant en een zeer pikante gehaktvulling. Een vlammetje dankt zijn naam aan het feit dat de snack vrij pikant is en figuurlijk je mond in vuur en vlam zet. Meestal worden vlammetjes met een zoetzure roodkleurige chilidipsaus geserveerd."
+    await ctx.send(response)
+
 
 
 @bot.command(name='lemons')

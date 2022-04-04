@@ -111,6 +111,11 @@ async def meme(ctx):
     await ctx.send(response) 
 ##GIFS
 
+@bot.command(name='raar')
+async def meme(ctx):
+    response = 'https://tenor.com/view/raar-jiskefet-raarrrr-audience-roar-gif-16980336'
+    await ctx.send(response)
+
 @bot.command(name='chips')
 async def meme(ctx):
     response = 'https://media.giphy.com/media/EFUiKHUiZNQUo/giphy.gif'

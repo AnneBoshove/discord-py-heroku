@@ -248,7 +248,7 @@ async def meme(ctx):
 
 @bot.listen('on_message')
 async def listener(message):
-    if "kwarkass" in message.content and cooldown:
+    if "kwarkass" in message.content:
         myid = '<@431831516541353995>'
         await message.channel.send(myid)
 

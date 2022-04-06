@@ -245,19 +245,13 @@ async def meme(ctx):
 
 
 ##LISTEN
-cooldown = True
 
 @bot.listen('on_message')
 async def listener(message):
-    global cooldown
     if "kwarkass" in message.content and cooldown:
-        cooldown = False
         myid = '<@431831516541353995>'
         await message.channel.send(myid)
-        time.sleep(10)
-        cooldown = True
-    else: 
-        pass
+
 
 @bot.listen('on_message')
 async def listener(message):

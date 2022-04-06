@@ -256,6 +256,8 @@ async def listener(message):
         await message.channel.send(myid)
         time.sleep(10)
         cooldown = True
+    else: 
+        continue
 
 @bot.listen('on_message')
 async def listener(message):

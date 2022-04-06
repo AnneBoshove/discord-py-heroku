@@ -2,6 +2,7 @@ import os
 from discord.ext import commands
 import discord
 import random
+import time
 
 bot = commands.Bot(command_prefix="!")
 TOKEN = os.getenv("DISCORD_TOKEN")
@@ -244,12 +245,17 @@ async def meme(ctx):
 
 
 ##LISTEN
+cooldown = True
 
 @bot.listen('on_message')
 async def listener(message):
-    if "kwarkass" in message.content:
+    global cooldown
+    if "kwarkass" in message.content and cooldown:
+        cooldown = False
         myid = '<@431831516541353995>'
         await message.channel.send(myid)
+        time.sleep(10)
+        cooldown = True
 
 @bot.listen('on_message')
 async def listener(message):

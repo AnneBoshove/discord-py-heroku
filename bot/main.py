@@ -325,9 +325,9 @@ async def listener(message):
         await message.channel.send(myid)
 
 @bot.listen('on_message')
-async def listener(message,ctx):
+async def listener(message):
     if "testtest" in message.content:
-        user = ctx.author.id
+        user = message.author
         await message.channel.send(user)
  
  

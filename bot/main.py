@@ -324,13 +324,21 @@ async def listener(message):
         myid = '<@481161014130376739>'
         await message.channel.send(myid)
 
+
 @bot.listen('on_message')
+geraden = False
 async def listener(message):
-    if "testtest" in message.content:
-        if message.author.id == 361175711471501322: 
-            await message.channel.send('fuck u')
-        else:
-            await message.channel.send('u good')
+    if "appeltje" in message.content and geraden = False:
+        await message.channel.send('je hebt het woord geraden:)')
+        geraden = True
+       # if message.author.id == 361175711471501322: 
+       #     
+       # else:
+       #     await message.channel.send('u good')
+    elif "appeltje" in message.content and geraden = True:
+        await message.channel.send('is al geraden bro')
+        #geraden = True
+        
  
  
 

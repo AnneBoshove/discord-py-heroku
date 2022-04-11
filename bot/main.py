@@ -334,12 +334,12 @@ async def listener(message):
     for woord in woorden:
         if woord in message.content and geraden is False: 
             geraden = True
-            if message.author.id == 361175711471501322:
-                pass
-            else:
-                id = str(message.author.id)
-                idstring = '<@'+id+'>'
-                await message.channel.send('Congrats '+idstring+'! Jij hebt als eerste het geheime woord: '+woord+' genoemd :partying_face: Jij verdient een sticker! <@431831516541353995> ')
+            #if message.author.id == 361175711471501322:
+            #    pass
+            #else:
+            id = str(message.author.id)
+            idstring = '<@'+id+'>'
+            await message.channel.send('Congrats '+idstring+'! Jij hebt als eerste het geheime woord: '+woord+' genoemd :partying_face: Jij verdient een sticker! <@431831516541353995> ')
         
         
    # or message.author.id == 431831516541353995     

@@ -6,6 +6,7 @@ import time
 
 bot = commands.Bot(command_prefix="!")
 TOKEN = os.getenv("DISCORD_TOKEN")
+geraden = False
 
 @bot.event
 async def on_ready():
@@ -328,7 +329,6 @@ async def listener(message):
 
 @bot.listen('on_message')
 async def listener(message):
-    geraden = False
     if "appeltje" in message.content and geraden is False:
         await message.channel.send('je hebt het woord geraden:)')
         geraden = True

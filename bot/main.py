@@ -253,7 +253,7 @@ async def meme(ctx):
 
 @bot.listen('on_message')
 async def listener(message):
-    author = ctx.message.author
+    author = message.author
     if "kwarkass" in message.content:
         if author.id == '361175711471501322':
             await message.channel.send('nope')

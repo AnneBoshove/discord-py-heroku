@@ -339,8 +339,8 @@ async def listener(message):
          #   else:
             id = str(message.author.id)
             idstring = '<@'+id+'>'
-            kaas = '<@962404347805839380>'
-            bitter = '<@962404347805839380>'
+            kaas = '<@&962404347805839380>'
+            bitter = '<@&962404347805839380>'
             await message.channel.send('Congrats '+idstring+'! Jij hebt als eerste het geheime woord: '+woord+' genoemd :partying_face: Jij verdient een sticker! '+kaas+' '+bitter)
         
         

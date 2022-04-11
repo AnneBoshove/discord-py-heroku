@@ -335,7 +335,7 @@ async def listener(message):
      #   if message.author.id == 361175711471501322:
      #       pass
      #   else:
-        id = message.author.id
+        id = str(message.author.id)
         idstring = '<@'+id+'>'
         await message.channel.send('Congrats '+idstring+'! Jij hebt als eerste het geheime woord: '+woord+' genoemd :squirtlecool: jij verdient een sticker')
         geraden = True

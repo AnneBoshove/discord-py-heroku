@@ -328,7 +328,7 @@ async def listener(message):
 async def listener(message):
     if "testtest" in message.content:
         user = message.author
-        if user == 'Fooflesbean#7545'
+        if user == 'Fooflesbean#7545':
             await message.channel.send('fuck u')
         else:
             await message.channel.send('u good')

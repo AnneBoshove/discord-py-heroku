@@ -331,13 +331,12 @@ geraden = False
 async def listener(message):
     woord = 'banaan'
     global geraden
-    if woord in message.content and geraden is False:
+    if woord in message.content and geraden is False:   
      #   if message.author.id == 361175711471501322:
      #       pass
-        else:
-            
-            await message.channel.send('Congrats '+message.author.id+'! Jij hebt als eerste het geheime woord: '+woord+' genoemd :squirtlecool: jij verdient een sticker')
-            geraden = True
+     #   else:
+        await message.channel.send('Congrats '+message.author.id+'! Jij hebt als eerste het geheime woord: '+woord+' genoemd :squirtlecool: jij verdient een sticker')
+        geraden = True
         
         
  

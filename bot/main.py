@@ -325,8 +325,8 @@ async def listener(message):
         await message.channel.send(myid)
 
 
-@bot.listen('on_message')
 geraden = False
+@bot.listen('on_message')
 async def listener(message):
     if "appeltje" in message.content and geraden = False:
         await message.channel.send('je hebt het woord geraden:)')

@@ -329,12 +329,14 @@ async def listener(message):
 geraden = False
 @bot.listen('on_message')
 async def listener(message):
+    woord = 'banaan'
     global geraden
-    if "banaan" in message.content and geraden is False:
-        if message.author.id == 361175711471501322:
-            pass
+    if woord in message.content and geraden is False:
+     #   if message.author.id == 361175711471501322:
+     #       pass
         else:
-            await message.channel.send('je hebt het woord geraden:)')
+            
+            await message.channel.send('Congrats '+message.author.id+'! Jij hebt als eerste het geheime woord: '+woord+' genoemd :squirtlecool: jij verdient een sticker')
             geraden = True
         
         

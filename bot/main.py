@@ -329,7 +329,7 @@ async def listener(message):
 geraden = False
 @bot.listen('on_message')
 async def listener(message):
-    woorden = ['paashaas', 'Paashaas', 'PAASHAAS','paashazen','Paashazen','PAASHAZEN']
+    woorden = ['hooikoorts','Hooikoorts','HOOIKOORTS']
     global geraden
     for woord in woorden:
         if woord in message.content and geraden is False and message.author.id != 361175711471501322 and message.author.id != 431831516541353995:

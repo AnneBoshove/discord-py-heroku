@@ -330,15 +330,12 @@ geraden = False
 @bot.listen('on_message')
 async def listener(message):
     global geraden
-    if "appeltje" in message.content and geraden is False:
-        await message.channel.send('je hebt het woord geraden:)')
-        geraden = True
-       # if message.author.id == 361175711471501322: 
-       #     
-       # else:
-       #     await message.channel.send('u good')
-    elif "appeltje" in message.content and geraden is True:
-        await message.channel.send('is al geraden bro')
+    if "banaan" in message.content and geraden is False:
+        if message.author.id == 361175711471501322:
+            pass
+        else:
+            await message.channel.send('je hebt het woord geraden:)')
+            geraden = True
         
         
  

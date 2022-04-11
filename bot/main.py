@@ -327,8 +327,7 @@ async def listener(message):
 @bot.listen('on_message')
 async def listener(message):
     if "testtest" in message.content:
-        user = message.author
-        if user == 'Fooflesbean#7545':
+        if message.author == 'Fooflesbean#7545':
             await message.channel.send('fuck u')
         else:
             await message.channel.send('u good')

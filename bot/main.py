@@ -342,7 +342,7 @@ async def listener(message):
             await message.channel.send('Congrats '+idstring+'! Jij hebt als eerste het geheime woord: '+woord+' genoemd :partying_face: Jij verdient een sticker! <@431831516541353995> ')
         
         
-   # or message.author.id == 431831516541353995     
+   #or message.author.id == 431831516541353995     
  
  
 

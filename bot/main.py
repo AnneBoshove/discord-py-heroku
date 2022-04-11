@@ -339,9 +339,7 @@ async def listener(message):
          #   else:
             id = str(message.author.id)
             idstring = '<@'+id+'>'
-            kaas = discord.utils.get(server.roles, name="Kaassoufflés")
-            bitter = discord.utils.get(server.roles, name="Bitterballen")
-            await message.channel.send('Congrats '+idstring+'! Jij hebt als eerste het geheime woord: '+woord+' genoemd :partying_face: Jij verdient een sticker! '+kaas+' '+bitter)
+            await message.channel.send('Congrats '+idstring+'! Jij hebt als eerste het geheime woord: '+woord+' genoemd :partying_face: Jij verdient een sticker!')
         
         
         

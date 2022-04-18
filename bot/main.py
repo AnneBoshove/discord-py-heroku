@@ -324,12 +324,22 @@ async def listener(message):
     if "DEMON" in message.content:
         myid = '<@481161014130376739>'
         await message.channel.send(myid)
+        
+@bot.listen('on_message')
+async def listener(message):
+    wijnen = ['wijn','Wijn','WIJN','wijnen','Wijnen','WIJNEN']
+    for woord in wijnen:
+        if woord in message.content:
+            myid = '<@454034978506932234>'
+            await message.channel.send(myid)
 
+
+#Geheime woord
 
 geraden = False
 @bot.listen('on_message')
 async def listener(message):
-    woorden = ['hooikoorts','Hooikoorts','HOOIKOORTS']
+    woorden = ['capybara','Capybara','CAPYBARA','capybaras','Capybaras','CAPYBARAS']
     global geraden
     for woord in woorden:
         if woord in message.content and geraden is False and message.author.id != 361175711471501322 and message.author.id != 431831516541353995:
